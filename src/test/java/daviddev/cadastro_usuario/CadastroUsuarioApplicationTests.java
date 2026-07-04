@@ -1,4 +1,4 @@
-package JavanNauta.cadastro_usuario;
+package daviddev.cadastro_usuario;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

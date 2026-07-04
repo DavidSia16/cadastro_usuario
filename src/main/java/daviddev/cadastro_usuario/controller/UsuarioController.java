@@ -1,10 +1,9 @@
-package JavanNauta.cadastro_usuario.controller;
+package daviddev.cadastro_usuario.controller;
 
 
-import JavanNauta.cadastro_usuario.business.UsuarioService;
-import JavanNauta.cadastro_usuario.infrastructure.entitys.Usuario;
+import daviddev.cadastro_usuario.business.UsuarioService;
+import daviddev.cadastro_usuario.infraestructure.entitys.Usuario;
 import lombok.RequiredArgsConstructor;
-import org.apache.coyote.Request;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -35,7 +34,7 @@ public class UsuarioController {
 
     @PutMapping
     public ResponseEntity<Void> atualizarUsuarioPorEmail(@RequestParam Integer id ,
-                                                        @RequestBody Usuario usuario) {
+                                                         @RequestBody Usuario usuario) {
         usuarioService.atualizarUsuarioPorId(id, usuario);
         return ResponseEntity.ok().build();
     }

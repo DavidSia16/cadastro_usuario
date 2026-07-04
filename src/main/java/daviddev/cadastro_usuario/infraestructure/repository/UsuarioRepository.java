@@ -1,6 +1,6 @@
-package JavanNauta.cadastro_usuario.infrastructure.repository;
+package daviddev.cadastro_usuario.infraestructure.repository;
 
-import JavanNauta.cadastro_usuario.infrastructure.entitys.Usuario;
+import daviddev.cadastro_usuario.infraestructure.entitys.Usuario;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 

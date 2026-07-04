@@ -1,4 +1,5 @@
-package JavanNauta.cadastro_usuario.infrastructure.entitys;
+package daviddev.cadastro_usuario.infraestructure.entitys;
+
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -22,3 +23,4 @@ public class Usuario {
     private String nome;
 
 }
+

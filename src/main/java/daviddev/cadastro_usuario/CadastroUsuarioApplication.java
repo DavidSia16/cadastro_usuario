@@ -1,4 +1,4 @@
-package JavanNauta.cadastro_usuario;
+package daviddev.cadastro_usuario;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

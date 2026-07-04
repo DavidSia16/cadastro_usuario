@@ -1,7 +1,7 @@
-package JavanNauta.cadastro_usuario.business;
+package daviddev.cadastro_usuario.business;
 
-import JavanNauta.cadastro_usuario.infrastructure.entitys.Usuario;
-import JavanNauta.cadastro_usuario.infrastructure.repository.UsuarioRepository;
+import daviddev.cadastro_usuario.infraestructure.entitys.Usuario;
+import daviddev.cadastro_usuario.infraestructure.repository.UsuarioRepository;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -21,7 +21,7 @@ public class UsuarioService {
     public Usuario buscarUsuarioPorEmail(String email) {
 
         return repository.findByEmail(email).orElseThrow(
-            () -> new RuntimeException("Email não encontrado!")
+                () -> new RuntimeException("Email não encontrado!")
         );
     }
 
@@ -31,7 +31,7 @@ public class UsuarioService {
 
     public void atualizarUsuarioPorId(Integer id, Usuario usuario) {
         Usuario usuarioEntity = repository.findById(id).orElseThrow(
-            () -> new RuntimeException("Usuario não Encontrado!"));
+                () -> new RuntimeException("Usuario não Encontrado!"));
         Usuario usuarioAtualizado = Usuario.builder()
                 .email(usuario.getEmail() != null ? usuario.getEmail() :
                         usuarioEntity.getEmail())
@@ -43,6 +43,3 @@ public class UsuarioService {
         repository.saveAndFlush(usuarioAtualizado);
     }
 }
-
-
-
